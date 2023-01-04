@@ -1,0 +1,148 @@
+/*body::before {
+    content: '';
+    width: 100%;
+    height: 5.5rem;
+    background: #CBC0D3;
+    display: block;
+    position: absolute;
+    top: 22.0rem;
+    left: 0;
+    z-index: -1;
+}*/
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8E9AAF;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 38.4rem;
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    margin: 0 auto;
+
+}
+
+header img {
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+
+    padding: 3.2rem 3.2rem 3.2rem;
+
+    animation: anim-descendo 1000ms;
+}
+
+.faixa {
+    margin: 0 auto;
+    text-align: center;
+    background: #CBC0D3;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+ 
+    color: #FFFFFF;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    transition: 400ms;
+}
+
+h1:hover {
+    transform: scale(1.2);
+}
+
+main {
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    background-color: #EFF1FF;
+    border-radius: 20px;
+
+    padding: 3.2rem 3.2rem 6.0rem;
+    width: 38.4rem;
+    margin: 0 auto 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+p {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #23053A;
+}
+
+.card {
+    position: relative;
+    transition: 400ms;
+}
+
+.card span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    color: #4A4E69;
+    background: #FEEAFA;
+    border-radius: 20px;
+
+    width: fit-content;
+    margin: 1.6rem;
+    padding: 0 1.5rem;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+
+}
+
+.card img {
+    width: 32rem;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+@keyframes anim-descendo {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
